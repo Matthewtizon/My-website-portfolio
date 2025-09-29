@@ -1,0 +1,54 @@
+/* all styles for header and nav bars*/
+html {
+    font-family: sans-serif;
+}
+
+.header {
+    top: 0;
+    left: 0;
+    width: 100%;
+    background-color: gray;
+    padding: 0 20px;
+}
+
+.header h2 {
+    margin-right: 100px;
+}
+
+.navbar {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.nav-links {
+    display: flex;
+}
+
+.nav-links a {
+    text-decoration: none;
+    padding: 0 10px;
+    color: black;
+}
+
+/* Main-content*/
+.main-content {
+    margin: 50px 30px 0 30px;
+}
+
+
+/*Landing page*/
+.landing-page {
+    display: flex;
+    justify-content: start;
+}
+
+.landing-intro {
+    padding-top: 68px;
+}
+
+img {
+    width: 190px;
+    height: 300px;
+    margin: 0 30px 0 
+}
