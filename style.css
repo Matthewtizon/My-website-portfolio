@@ -1,34 +1,96 @@
+/* Remove default margin and padding */
+ * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    /* Prevent horizontal scrolling */
+    html, body {
+      width: 100%;
+      height: 100%;
+      overflow-x: hidden; /* hides horizontal scrollbar */
+      
+    }
+
 /* all styles for header and nav bars*/
 html {
     font-family: sans-serif;
 }
+/* Navigation Style */
+nav {
+    height: 60px;
+    background-color: black;
+    display: flex;
+    justify-content: flex-end;
+}
 
-.header {
-    top: 0;
-    left: 0;
+.links-container{
+    height: 100%;
     width: 100%;
-    background-color: gray;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+nav a{
+    height: 100%;
     padding: 0 20px;
-}
-
-.header h2 {
-    margin-right: 100px;
-}
-
-.navbar {
     display: flex;
     align-items: center;
-    justify-content: space-between;
-}
-
-.nav-links {
-    display: flex;
-}
-
-.nav-links a {
     text-decoration: none;
-    padding: 0 10px;
+    color: white;
+}
+
+nav a:hover{
+    background-color: white;
     color: black;
+}
+
+nav .home-link {
+    margin-right: auto;
+}
+
+nav svg{
+    color: white;
+}
+
+#sidebar-active{
+    display: none;
+}
+
+.open-sidebar-button, .close-sidebar-button {
+    display: none;
+}
+
+
+@media(max-width: 460px){
+    .links-container {
+        flex-direction: column;
+        align-items: flex-start;
+        position: fixed;
+        top: 0;
+        right: 0;
+        z-index: 10;
+        width: 300px;
+        background-color: black;
+        box-shadow: -5px 0 5px rgba(0, 0, 0, 0.25);
+    }
+    nav a{
+        box-sizing: border-box;
+        height: auto;
+        width: 100%;
+        padding: 20px 30px;
+        justify-content: flex-start; 
+    }
+
+    .open-sidebar-button, .close-sidebar-button {
+        display: block;
+    } 
+
+    #sidebar-active:checked ~ .links-container{
+        display: flex;   
+    }
 }
 
 /* Main-content*/
@@ -41,6 +103,7 @@ html {
 .landing-page {
     display: flex;
     justify-content: start;
+    margin-bottom: 55px;
 }
 
 .landing-intro {
