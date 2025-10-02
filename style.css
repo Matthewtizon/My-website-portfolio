@@ -97,7 +97,7 @@ nav svg{
 
 /* Main-content*/
 .main-content {
-    margin: 50px 30px 0 30px;
+    margin: 50px 60px 60px 60px;
 }
 
 
@@ -109,11 +109,36 @@ nav svg{
 }
 
 .landing-intro {
-    padding-top: 68px;
+    margin:auto;
+    
 }
 
-img {
+.bio {
+    font-size: 40px;
+    font-weight: bold;
+}
+
+.bio2{
+    font-size: 21px;
+    font-family: monospace;
+    font-style: italic;
+    font-weight: bold;
+}
+
+.tech {
+    font-family: cursive;
+    font-size: larger;
+}
+
+.contactMe {
+    font-size: large;
+    text-align: center;
+}
+
+img[src="images/monte4.jpg"] {
     width: 190px;
     height: 300px;
-    margin: 0 30px 0 
+    margin: 0 30px;
 }
+
+
