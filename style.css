@@ -23,6 +23,11 @@ h2 {
     margin-bottom: 35px;
 } 
 
+.dark-mode{
+    background-color: black;
+    color: white
+}
+
 
 /* Navigation Style */
 nav {
