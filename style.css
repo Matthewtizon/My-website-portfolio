@@ -17,6 +17,13 @@
 html {
     font-family: sans-serif;
 }
+
+h2 {
+    margin-top: 55px;
+    margin-bottom: 35px;
+} 
+
+
 /* Navigation Style */
 nav {
     height: 60px;
@@ -105,7 +112,6 @@ nav svg{
 .landing-page {
     display: flex;
     justify-content: start;
-    margin-bottom: 55px;
 }
 
 .landing-intro {
@@ -138,7 +144,70 @@ nav svg{
 img[src="images/monte4.jpg"] {
     width: 190px;
     height: 300px;
-    margin: 0 30px;
+    margin: 0 30px
 }
 
 
+@media(max-width:932px) {
+    .landing-page{
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        align-items: center;
+    }
+    .landing-intro p{
+        margin-top: 10px;
+        font-size: 15px;
+    }
+    
+    
+}
+
+
+
+/* Project Sections*/
+
+.project-section {
+    display: none;
+}
+
+
+
+
+/* Inline skills and education section */
+
+.skillEducation-inline{
+    display: flex;
+    justify-content: space-evenly;
+    flex-direction: row;
+    
+}
+
+
+/* skill section */
+
+.skills-section {
+    margin-right: 20px;
+}
+
+
+/* Experience & Education section*/
+
+
+
+
+
+/* Contact section*/
+
+.contact-section {
+    text-align: start;
+}
+
+/* Footer */
+
+footer{
+    text-align: center;
+    background-color: black;
+    color: white;
+    padding: 20px  0 20px 0
+}
