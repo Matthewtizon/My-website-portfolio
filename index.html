@@ -26,6 +26,7 @@
         </div>
     </nav>
     <div class="main-content">
+        <button type="button" onclick="toggleDarkMode()">Dark Mode</button>
         <div class="landing-page">
             <div class="landing-image">
                 <img src="images/monte4.jpg" alt="picture ko" id="picture" >
@@ -33,7 +34,8 @@
             <div class="landing-intro">
                 
                 <p class="bio">Hi, I'm John Matthew K. Tizon</p>
-                <p class="bio2">Aspiring Web Developer, Cloud Specialist.</p>
+                <p class="bio2" id="bio2">Aspiring Web Developer, Cloud Specialist.</p>
+                <button type="button" onclick="changeText()">Click Here</button>
                 <br>
                 <p class="tech">I develop websites using Html, Css, JavaScript, React FrameWork, also Deploy websites to Cloud Infrastructure using AWS as a Cloud Specialist.</p>
                 <br>
@@ -126,5 +128,6 @@
     <footer>
         copyright@matthewtizonpage
     </footer>
+    <script src="script.js"></script>
 </body>
 </html>
