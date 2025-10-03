@@ -17,6 +17,13 @@
 html {
     font-family: sans-serif;
 }
+
+h2 {
+    margin-top: 55px;
+    margin-bottom: 35px;
+} 
+
+
 /* Navigation Style */
 nav {
     height: 60px;
@@ -97,7 +104,7 @@ nav svg{
 
 /* Main-content*/
 .main-content {
-    margin: 50px 30px 0 30px;
+    margin: 50px 60px 60px 60px;
 }
 
 
@@ -105,15 +112,102 @@ nav svg{
 .landing-page {
     display: flex;
     justify-content: start;
-    margin-bottom: 55px;
 }
 
 .landing-intro {
-    padding-top: 68px;
+    margin:auto;
+    
 }
 
-img {
+.bio {
+    font-size: 40px;
+    font-weight: bold;
+}
+
+.bio2{
+    font-size: 21px;
+    font-family: monospace;
+    font-style: italic;
+    font-weight: bold;
+}
+
+.tech {
+    font-family: cursive;
+    font-size: larger;
+}
+
+.contactMe {
+    font-size: large;
+    text-align: center;
+}
+
+img[src="images/monte4.jpg"] {
     width: 190px;
     height: 300px;
-    margin: 0 30px 0 
+    margin: 0 30px
+}
+
+
+@media(max-width:932px) {
+    .landing-page{
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        align-items: center;
+    }
+    .landing-intro p{
+        margin-top: 10px;
+        font-size: 15px;
+    }
+    
+    
+}
+
+
+
+/* Project Sections*/
+
+.project-section {
+    display: none;
+}
+
+
+
+
+/* Inline skills and education section */
+
+.skillEducation-inline{
+    display: flex;
+    justify-content: space-evenly;
+    flex-direction: row;
+    
+}
+
+
+/* skill section */
+
+.skills-section {
+    margin-right: 20px;
+}
+
+
+/* Experience & Education section*/
+
+
+
+
+
+/* Contact section*/
+
+.contact-section {
+    text-align: start;
+}
+
+/* Footer */
+
+footer{
+    text-align: center;
+    background-color: black;
+    color: white;
+    padding: 20px  0 20px 0
 }
