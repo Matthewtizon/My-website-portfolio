@@ -1,17 +1,17 @@
 /* Remove default margin and padding */
  * {
-      margin: 0;
-      padding: 0;
-      box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
     }
 
     /* Prevent horizontal scrolling */
     html, body {
-      width: 100%;
-      height: 100%;
-      overflow-x: hidden; /* hides horizontal scrollbar */
-      
-    }
+    width: 100%;
+    height: 100%;
+    overflow-x: hidden; /* hides horizontal scrollbar */
+    
+}
 
 /* all styles for header and nav bars*/
 html {
@@ -23,11 +23,22 @@ h2 {
     margin-bottom: 35px;
 } 
 
+a{
+    text-decoration: none;
+    color: black;
+}
+a:hover{
+    background-color: rgb(127, 127, 127);
+}
+
 .dark-mode{
     background-color: black;
     color: white
 }
-
+.dark-nav{
+    background-color: rgb(14, 226, 14);
+    color: black;
+}
 
 /* Navigation Style */
 nav {
@@ -36,6 +47,7 @@ nav {
     display: flex;
     justify-content: flex-end;
 }
+
 
 .links-container{
     height: 100%;
@@ -112,6 +124,14 @@ nav svg{
     margin: 50px 60px 60px 60px;
 }
 
+.Dark-mode-button{
+    background-color: black;
+    color: white;
+    padding: 12px;
+    border: 2px solid green;
+    border-radius: 20px;
+}
+
 
 /*Landing page*/
 .landing-page {
@@ -173,7 +193,17 @@ img[src="images/monte4.jpg"] {
 /* Project Sections*/
 
 .project-section {
-    display: none;
+    display: block;
+}
+
+.project-grid{
+    display: flex;
+}
+
+.project-grid img{
+    height: 200px;
+    width: 200px;
+    margin: 20px;
 }
 
 

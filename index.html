@@ -26,7 +26,7 @@
         </div>
     </nav>
     <div class="main-content">
-        <button type="button" onclick="toggleDarkMode()">Dark Mode</button>
+        <button type="button" class="Dark-mode-button" onclick="toggleDarkMode()">Dark Mode</button>
         <div class="landing-page">
             <div class="landing-image">
                 <img src="images/monte4.jpg" alt="picture ko" id="picture" >
@@ -62,9 +62,14 @@
         <!-- This section all of my projects will be displayed-->
         <div class="project-section">
             <h2>My Projects</h2>
+            <div class="project-grid">
+                <img id="project-image" src="images/home.png" alt="project #1">
+                <button type="button" onclick="previewSlide()">Preview</button>
+                <button type="button" onclick="nextSlide()">Next</button>
+            </div>
             <p>Calculator</p>
             <p>this is a tool for calculating hard numbers</p>
-            <a href="">My GitHub Link</a>
+            <a  target="_blank" href="https://github.com/Matthewtizon">My GitHub Link</a>
         </div>
         <br>
         <br>

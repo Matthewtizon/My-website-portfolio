@@ -6,5 +6,22 @@ function changeText(){
 
 function toggleDarkMode(){
     const bodyColor = document.body;
+    const nav = document.querySelector("nav");
     bodyColor.classList.toggle("dark-mode")
+    nav.classList.toggle("dark-nav")
+}
+
+
+let images = ["images/home.png", "images/envelope.png", "images/phone-call.png", "images/user.png" ];
+
+let index = 0;
+
+function previewSlide(){
+    index = (index - 1)% images.length;
+    document.getElementById('project-image').src = images[index];
+}
+
+function nextSlide(){
+    index = (index + 1)% images.length;
+    document.getElementById('project-image').src = images[index];
 }
