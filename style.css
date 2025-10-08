@@ -1,35 +1,94 @@
-/* Remove default margin and padding */
- * {
+:root {
+    --text-color: #1a1c20;
+    --link-color: #4a76ee;
+    --background-color: #eeeff1;
+}
+
+* {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    }
+}
 
-    /* Prevent horizontal scrolling */
-    html, body {
-    width: 100%;
-    height: 100%;
-    overflow-x: hidden; /* hides horizontal scrollbar */
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+    background-color: var(--background-color);
+}
+
+a {
+    color: var(--link-color);
+    text-decoration: none;
+}
+
+
+
+/*NAVBAR*/
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    padding: 0 50px;
+    height: 80px;
+    align-items: center;
     
 }
 
-/* all styles for header and nav bars*/
-html {
-    font-family: sans-serif;
+
+nav .left a {
+    color: var(--text-color);
+    font-size: 22px;
+    font-weight: 600;
 }
 
-h2 {
-    margin-top: 55px;
-    margin-bottom: 35px;
-} 
+nav .right a {
+    color: var(--text-color);
+    font-weight: 600;
+    padding: 0 12px;
+    margin: 0 12px;
+}
 
-a{
-    text-decoration: none;
-    color: black;
+nav .right a:last-child {
+    color: var(--background-color);
+    background-color: var(--text-color);
+    padding: 10px;
+    border-radius: 10px;
+
 }
-a:hover{
-    background-color: rgb(127, 127, 127);
+
+nav .right a span {
+    margin-left: 5px;
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 .dark-mode{
     background-color: black;
@@ -40,84 +99,17 @@ a:hover{
     color: black;
 }
 
-/* Navigation Style */
-nav {
-    height: 60px;
-    background-color: black;
-    display: flex;
-    justify-content: flex-end;
-}
 
 
-.links-container{
-    height: 100%;
-    width: 100%;
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-}
-
-nav a{
-    height: 100%;
-    padding: 0 20px;
-    display: flex;
-    align-items: center;
-    text-decoration: none;
-    color: white;
-}
-
-nav a:hover{
-    background-color: white;
-    color: black;
-}
-
-nav .home-link {
-    margin-right: auto;
-}
-
-nav svg{
-    color: white;
-}
-
-#sidebar-active{
-    display: none;
-}
-
-.open-sidebar-button, .close-sidebar-button {
-    padding: 13px 20px;
-    display: none;
-}
 
 
-@media(max-width: 460px){
-    .links-container {
-        flex-direction: column;
-        align-items: flex-start;
-        position: fixed;
-        top: 0;
-        right: -100%;
-        z-index: 10;
-        width: 300px;
-        background-color: black;
-        box-shadow: -5px 0 5px rgba(0, 0, 0, 0.25);
-        transition: .75s ease-out;
-    }
-    nav a{
-        box-sizing: border-box;
-        height: auto;
-        width: 100%;
-        padding: 20px 30px;
-        justify-content: center; 
-    }
 
-    .open-sidebar-button, .close-sidebar-button {
-        display: block;
-    }
 
-    #sidebar-active:checked ~ .links-container{
-        right: 0;   
-    }
-}
+
+
+
+
+
 
 /* Main-content*/
 .main-content {
@@ -145,25 +137,15 @@ nav svg{
 }
 
 .bio {
-    font-size: 40px;
-    font-weight: bold;
 }
 
 .bio2{
-    font-size: 21px;
-    font-family: monospace;
-    font-style: italic;
-    font-weight: bold;
 }
 
 .tech {
-    font-family: cursive;
-    font-size: larger;
 }
 
 .contactMe {
-    font-size: large;
-    text-align: center;
 }
 
 img[src="images/monte4.jpg"] {
@@ -181,8 +163,7 @@ img[src="images/monte4.jpg"] {
         align-items: center;
     }
     .landing-intro p{
-        margin-top: 10px;
-        font-size: 15px;
+
     }
     
     
