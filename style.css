@@ -33,14 +33,11 @@ a {
 }
 
 h2 {
-    margin-top: 30px;
-    margin-left: 40px;
+    margin-top: 40px;
+    text-align: center;
 }
 
-section {
-    display: grid;
-    justify-content: center;
-}
+
 
 
 
@@ -129,7 +126,36 @@ img[src="images/monte4.jpg"] {
     background-color: var(--link-color);
 }
 
+/* About Me Section */
 
+.about-me {
+    text-align: center;
+}
+
+.about-me h5 {
+    margin-top: 50px;
+}
+
+.skill-blocks {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.skill-blocks .skills {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    padding: 15px;
+    border: 2px solid var(--link-color);
+    border-radius: 20px;
+    margin: 4px;
+}
+
+.skill-blocks .skills span{
+    padding-left: 10px;
+}
 
 
 @media(max-width:932px) {
@@ -138,6 +164,7 @@ img[src="images/monte4.jpg"] {
         display: flex;
         flex-direction: column;
         text-align: center;
+        flex-direction: column-reverse;
     }
 
     .landing-intro {
