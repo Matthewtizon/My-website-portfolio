@@ -168,10 +168,6 @@ img[src="images/monte4.jpg"] {
 
 /* Project Sections*/
 
-.project-section {
-    
-}
-
 .project-grid .project-images{
     display: flex;
     justify-content: center;
@@ -197,15 +193,64 @@ img[src="images/monte4.jpg"] {
 
 /* Experience & Education section*/
 
+/* inline testi forms*/
+.inline-testi-forms {
+    display: flex;
+    gap:20px;
+
+}
 
 
+/* Testimonies */
+
+.testimonies {
+    display: flex;
+    align-items: center;
+    flex: 7;
+}
+.testimonies .testi-pic {
+    text-align: center;
+    font-weight: 600;
+}
+.testimonies .testi-pic img {
+    width: 190px;
+    height: 300px;
+    margin: 0 30px;
+    border-radius: 50%;
+    
+}
+
+.testimonies .testi-p {
+    flex-direction: column;
+}
 
 
 /* Contact section*/
 
-.contact-section {
-    text-align: start;
+.contact-section{
+    text-align: center;
+    flex: 3
 }
+
+.contact-section form{
+    display: flex;
+    flex-direction: column;
+
+}
+
+.contact-section form input, 
+.contact-section form textarea{
+    height: 60px;
+}
+
+.contact-section form button {
+    background-color: #2244a1;
+    color: white;
+    margin-top: 20px;
+    height: 50px;
+}
+
+
 
 /* Footer */
 
