@@ -89,6 +89,7 @@ nav .right a span {
 .landing-page{
     display: flex;
     justify-content: space-around;
+    margin-bottom: 20px;
 }
 
 .landing-intro {
@@ -136,25 +137,83 @@ img[src="images/monte4.jpg"] {
     margin-top: 50px;
 }
 
-.skill-blocks {
+.cells {
     display: flex;
     justify-content: center;
     flex-wrap: wrap;
 }
 
-.skill-blocks .skills {
+.cells .cell {
     display: flex;
     justify-content: center;
     align-items: center;
 
-    padding: 15px;
-    border: 2px solid var(--link-color);
-    border-radius: 20px;
+    padding: 10px 35px;
+    border: 2px solid var(--text-color);
+    border-radius: 7px;
     margin: 4px;
 }
 
-.skill-blocks .skills span{
+.cells .cell span{
     padding-left: 10px;
+}
+
+/* This will be a inline div */
+
+.inline-section {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+/* Project Sections*/
+
+.project-section {
+    
+}
+
+.project-grid .project-images{
+    display: flex;
+    justify-content: center;
+}
+
+.project-grid .project-button {
+    display: flex;
+    justify-content: center;
+}
+
+.project-grid .project-button button{
+    padding: 15px;
+    margin: 12px;
+    border: 2px solid var(--text-color);
+    border-radius: 7px;
+}
+
+.project-grid img{
+    height: 200px;
+    width: 200px;
+    margin: 20px;
+}
+
+/* Experience & Education section*/
+
+
+
+
+
+/* Contact section*/
+
+.contact-section {
+    text-align: start;
+}
+
+/* Footer */
+
+footer{
+    text-align: center;
+    background-color: black;
+    color: white;
+    padding: 20px  0 20px 0
 }
 
 
@@ -255,59 +314,5 @@ img[src="images/monte4.jpg"] {
 
 
 
-/* Project Sections*/
-
-.project-section {
-    display: block;
-}
-
-.project-grid{
-    display: flex;
-}
-
-.project-grid img{
-    height: 200px;
-    width: 200px;
-    margin: 20px;
-}
 
 
-
-
-/* Inline skills and education section */
-
-.skillEducation-inline{
-    display: flex;
-    justify-content: space-evenly;
-    flex-direction: row;
-    
-}
-
-
-/* skill section */
-
-.skills-section {
-    margin-right: 20px;
-}
-
-
-/* Experience & Education section*/
-
-
-
-
-
-/* Contact section*/
-
-.contact-section {
-    text-align: start;
-}
-
-/* Footer */
-
-footer{
-    text-align: center;
-    background-color: black;
-    color: white;
-    padding: 20px  0 20px 0
-}
