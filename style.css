@@ -164,6 +164,7 @@ img[src="images/monte4.jpg"] {
     display: flex;
     justify-content: space-around;
     flex-wrap: wrap;
+    gap: 50px;
 }
 
 /* Project Sections*/
@@ -196,7 +197,7 @@ img[src="images/monte4.jpg"] {
 /* inline testi forms*/
 .inline-testi-forms {
     display: flex;
-    gap:20px;
+    gap:40px;
 
 }
 
@@ -235,12 +236,13 @@ img[src="images/monte4.jpg"] {
 .contact-section form{
     display: flex;
     flex-direction: column;
-
+    width: 300px;
+    margin: 0 auto;
 }
 
 .contact-section form input, 
 .contact-section form textarea{
-    height: 60px;
+    height: 30px;
 }
 
 .contact-section form button {
@@ -278,6 +280,13 @@ footer{
 
     #landing-links {
         justify-content: center;
+    }
+
+    /* inline testi forms*/
+    .inline-testi-forms {
+        display: flex;
+        gap:40px;
+        flex-direction: column;
     }
 }
 

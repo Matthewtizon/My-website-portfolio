@@ -25,3 +25,30 @@ function nextSlide(){
     index = (index + 1)% images.length;
     document.getElementById('project-image').src = images[index];
 }
+
+
+const form = document.getElementById('myform')
+
+console.log(form)
+
+let savedName = '';
+let savedEmail = '';
+let savedMessage = '';
+
+
+
+form.addEventListener('submit', (e) => {
+    e.preventDefault()
+    const formData = new FormData(form);
+    savedName = formData.get('name');
+    savedEmail = formData.get('email');
+    savedMessage = formData.get('message');
+
+    submitHandler();
+})
+
+function submitHandler() {
+    console.log(`Name: ${savedName}
+Email: ${savedEmail}
+Message: ${savedMessage}`)
+}
