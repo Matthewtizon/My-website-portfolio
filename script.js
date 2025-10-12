@@ -1,6 +1,6 @@
 
 function changeText(){
-    const bio2 = document.getElementById('bio2');
+    const bio2 = document.getElementById('changeMe');
     bio2.innerText = (bio2.innerText === "Aspiring Web Developer, Cloud Specialist." ? "Actually a Beginner." : "Aspiring Web Developer, Cloud Specialist.");
 }
 
